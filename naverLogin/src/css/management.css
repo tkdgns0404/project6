@@ -1,0 +1,50 @@
+.managementTitle {
+  color: deeppink;
+}
+
+.table_wrapper {
+  align-items: center;
+}
+
+.pagination_wrapper {
+  margin-top: 15px;
+}
+
+.homeButtons {
+  margin-right: 10px;
+}
+
+.searchInput {
+  height: 36px;
+  margin-right: 15px;
+}
+
+.pagination_number {
+  cursor: pointer;
+}
+
+.logoutButton{
+  margin:10px;
+}
+
+.pagination_number:not(:last-child) {
+  margin-right: 7px;
+}
+
+.title{
+  text-align: center;
+  color: rgb(54, 54, 54);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main{
+  text-align: center;
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login{
+  text-align: center;
+  color: aliceblue;
+  font-family: cursive;
+}

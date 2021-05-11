@@ -1,0 +1,47 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+.profile_icon {
+  color: RGB(79, 187, 222);
+  font-size: 72px;
+  margin-right: 30px;
+}
+
+.column_reverse {
+  flex-direction: column;
+}
+
+.registerTitle {
+  color: RGB(51, 81, 222);
+}
+
+.registerInput {
+  width: 20vw;
+}
+
+.registerInput:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.registerButton {
+  margin-right: 20px;
+}
+
+.registerSelect {
+  width: 20vw; height: 41px; font-size: 15px; color:#999;  border-radius:50% #ddd; background: url(bg_select.png) no-repeat right 13px center;
+      appearance:none; -webkit-appearance:none;
+  margin-bottom: 20px;
+} 
+
+
+
+.profile_preview {
+  width: 73px;
+  height: 73px;
+  margin-right: 20px;
+  border-radius: 50%;
+  display: none;
+}
+
+.addressButton {
+  width: 250px;
+}

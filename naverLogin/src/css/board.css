@@ -1,0 +1,101 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+.profile_icon {
+  color: RGB(79, 187, 222);
+  font-size: 72px;
+  margin-right: 30px;
+}
+
+
+.registerTitle {
+  color: RGB(51, 81, 222);
+}
+
+.boardInput {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.writerInput{
+  margin-bottom: 15px;
+  
+}
+
+.titleInput{
+  margin-bottom: 15px;
+  width: 500px;
+}
+
+
+.contentInput{
+  margin-bottom: 15px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  border: rgba(0, 0, 0, 0.87), !important;
+  z-index: 1;
+  outline-color: #6200ee;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  padding: 12px;
+}
+
+.btn-like {
+  margin: 20px;
+  color: transparent;
+  text-shadow: 0 0 2px rgba(255,255,255,.7), 0 0 0 #000;
+}
+.btn-like:hover {
+  text-shadow: 0 0 0 #ea0;
+}
+.btn-like.done {
+  color: #f00;
+  text-shadow: 0;
+}
+.btn-like.done:hover {
+  color: transparent;
+  text-shadow: 0 0 0 #777;
+}
+
+
+.btn-hate {
+  color: transparent;
+  text-shadow: 0 0 2px rgba(255,255,255,.7), 0 0 0 #000;
+}
+.btn-hate:hover {
+  text-shadow: 0 0 0 #ea0;
+}
+.btn-hate.done {
+  color: #f00;
+  text-shadow: 0;
+}
+.btn-hate.done:hover {
+  color: transparent;
+  text-shadow: 0 0 0 #777;
+}
+
+
+.registerButton {
+  margin-right: 20px;
+}
+
+
+.registerSelect {
+  width: 20vw; height: 41px; font-size: 15px; color:#999;  border-radius:50% #ddd; background: url(bg_select.png) no-repeat right 13px center;
+      appearance:none; -webkit-appearance:none;
+  margin-bottom: 20px;
+} 
+
+
+
+.profile_preview {
+  width: 73px;
+  height: 73px;
+  margin-right: 20px;
+  border-radius: 50%;
+  display: none;
+}
+
+.addressButton {
+  width: 250px;
+}

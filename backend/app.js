@@ -1,0 +1,36 @@
+const createError = require('http-errors')
+const express = require('express')
+const path = require('path')
+const cookieParser = require('cookie-parser')
+const logger = require('morgan')
+const cors = require('cors')
+
+const app = express()
+
+app.use(cors()) // CORS 설정
+app.use(logger('dev'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+app.use(cookieParser())
+// 요청에 대한 응답으로 업로드 폴더 지정
+app.use('/images', express.static(path.join(__dirname + '/uploads')))
+
+// 라우팅
+app.use('/', require('./routes'))
+
+// 라우팅 이후 404에러 호출
+app.use(function(req, res, next) {
+  next(createError(404))
+})
+
+// 에러 발생 시
+app.use(function(err, req, res, next) {
+  res.locals.message = err.message
+  res.locals.error = req.app.get('env') === 'development' ? err : {}
+
+  // render the error page
+  res.status(err.status || 500)
+  res.render('error')
+})
+
+module.exports = app

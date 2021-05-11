@@ -1,0 +1,28 @@
+.managementTitle {
+  color: deeppink;
+}
+
+.table_wrapper {
+  align-items: center;
+}
+
+.pagination_wrapper {
+  margin-top: 15px;
+}
+
+.homeButtons {
+  margin-right: 10px;
+}
+
+.searchInput {
+  height: 36px;
+  margin-right: 15px;
+}
+
+.pagination_number {
+  cursor: pointer;
+}
+
+.pagination_number:not(:last-child) {
+  margin-right: 7px;
+}
